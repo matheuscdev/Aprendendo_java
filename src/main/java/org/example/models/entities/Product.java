@@ -1,4 +1,4 @@
-package org.example.entities;
+package org.example.models.entities;
 
 public class Product {
 
@@ -6,7 +6,6 @@ public class Product {
     private Double price;
 
     public Product(){
-
     }
 
     public Product(String name, Double price) {

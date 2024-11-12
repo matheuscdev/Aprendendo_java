@@ -1,4 +1,4 @@
-package org.example.entities;
+package org.example.models.entities;
 
 public class OrderItem {
 
@@ -8,7 +8,6 @@ public class OrderItem {
     private Product product;
 
     public OrderItem(){
-
     }
 
     public OrderItem(Integer quantity, Product product, Double price) {

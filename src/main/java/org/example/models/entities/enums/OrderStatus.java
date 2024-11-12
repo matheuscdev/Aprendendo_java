@@ -1,4 +1,4 @@
-package org.example.entities.enums;
+package org.example.models.entities.enums;
 
 public enum OrderStatus {
 

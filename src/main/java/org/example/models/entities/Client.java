@@ -1,4 +1,4 @@
-package org.example.entities;
+package org.example.models.entities;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -12,7 +12,6 @@ public class Client {
     private Date birthDate;
 
     public Client(){
-
     }
 
     public Client(String name, String email, Date birthDate) {
