@@ -27,34 +27,46 @@ public class Order {
     }
 
     public OrderStatus getStatus() {
+
         return status;
     }
 
     public void setStatus(OrderStatus status) {
+
         this.status = status;
     }
 
     public Date getMoment() {
+
         return moment;
     }
 
     public void setMoment(Date moment) {
+
         this.moment = moment;
     }
 
     public Client getClient() {
+
         return client;
     }
 
     public void setClient(Client client) {
+
         this.client = client;
     }
 
+    public List<OrderItem> getItems() {
+        return items;
+    }
+
     public void addItem(OrderItem item){
+
         items.add(item);
     }
 
     public void removeItem(OrderItem item){
+
         items.remove(item);
     }
 
@@ -65,5 +77,28 @@ public class Order {
              sum += x.subTotal();
         }
         return sum;
+    }
+
+    @Override
+    public String toString() {
+
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("Order moment: ");
+        sb.append(sdf.format(moment) + "\n");
+        sb.append("Order status: ");
+        sb.append(status + "\n");
+        sb.append("Client: ");
+        sb.append(client + "\n");
+        sb.append("Order items: \n");
+
+        for (OrderItem x : items){
+
+            sb.append(x + "\n");
+        }
+        sb.append("Total price: R$");
+        sb.append(String.format("%.2f", total()));
+
+        return sb.toString();
     }
 }
