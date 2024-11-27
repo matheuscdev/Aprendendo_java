@@ -28,6 +28,7 @@ public class UsedProduct extends Product{
     }
 
 
+    @Override
     public String priceTag() {
         return getName()
                 + " (used) "
