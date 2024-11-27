@@ -1,0 +1,1 @@
+Este repositório é para fins didáticos, apenas para praticar meu conhecimento sobre Java e mostrar aqui o meu progresso através de atividades que são proposta ao decorrer do curso de Java do Nélio Alves na Udemy
